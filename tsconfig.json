@@ -1,0 +1,23 @@
+{
+  "extends": "./node_modules/@adonisjs/mrm-preset/_tsconfig",
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": "./",
+    "esModuleInterop": true,
+    // Generate d.ts files
+    "declaration": true,
+    "resolveJsonModule": true,
+    "types": [
+      "@adonisjs/core",
+      "@adonisjs/repl",
+      "image-thumbnail"
+    ]
+  }
+}
