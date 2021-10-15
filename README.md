@@ -13,11 +13,20 @@
 
  [![npm-image]][npm-url] [![license-image]][license-url] [![typescript-image]][typescript-url]
 
-A short brief
+[Image thumbnail](https://github.com/onildoaguiar/image-thumbnail) provider for AdonisJS
 
 ## Installation
 ```bash
 npm i --save adonis5-image-thumbnail
+```
+
+Compile your code:
+```bash
+node ace serve --watch
+```
+Connect all dependences:
+```bash
+node ace invoke adonis5-image-thumbnail
 ```
 ## Usage
 After adding provider to your app, 
@@ -26,6 +35,8 @@ you can import ImageThumbnail to access its functions
     const image = request.file('image')
     const thumbnail = await imageThumbnail(image.tmpPath,{width:150, height:150, withMetaData: true, fit: 'inside'})
 ```
+For other options, please look at official library [documentation](https://github.com/onildoaguiar/image-thumbnail#readme)
+
 [npm-image]: https://img.shields.io/npm/v/adonis5-image-thumbnail.svg?style=for-the-badge&logo=npm
 [npm-url]: https://npmjs.org/package/adonis5-image-thumbnail "npm"
 
