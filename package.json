@@ -28,6 +28,12 @@
   "types": "build/adonis-typings/index.d.ts",
   "typings": "build/adonis-typings/index.d.ts",
   "homepage": "https://github.com/shymelon/adonis5-image-thumbnail#readme",
+  "adonisjs": {
+    "types": "adonis5-image-thumbnail",
+    "providers": [
+      "adonis5-image-thumbnail"
+    ]
+  },
   "devDependencies": {
     "@adonisjs/assembler": "^5.0.0",
     "@adonisjs/mrm-preset": "^4.1.2",
